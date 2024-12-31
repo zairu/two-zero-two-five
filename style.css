@@ -1,0 +1,104 @@
+body {
+  background-color: #cac8c4;
+}
+
+.main-view {
+  margin: 10%;
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.element {
+  flex: 1;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.element img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text {
+  font-size: calc(5vw + 10px);
+}
+
+.animated-fadeout {
+  animation: fadeOutUp 0.3s forwards;
+}
+
+.animated-fadein {
+  animation: fadeInUp 0.3s forwards;
+}
+
+@keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  70% {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  70% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated-fade-in {
+  animation: fadeIn 0.2s forwards;
+}
+.animated-fade-out {
+  animation: fadeOut 0.2s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

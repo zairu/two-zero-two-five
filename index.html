@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>2025</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body>
+  <div class="main-view">
+    <div id="calculation-container" class="row">
+        <div class="element text" id="currentNumber"></div>
+    </div>
+    <div id="next-container" class="row">
+        <div class="element text">NEXT:</div>
+    </div>
+    <div id="operator-container" class="row">
+        <div class="element">
+            <div id="div-operator1"><img src="img/ope_plus.png" alt="operator" id="img-operator1"></div>
+            <button id="select-operator1">選択</button>
+        </div>
+        <div class="element">
+            <div id="div-operator2"><img src="img/ope_plus.png" alt="operator" id="img-operator2"></div>
+            <button id="select-operator2">選択</button>
+        </div>
+        <div class="element">
+            <div id="div-operator3"><img src="img/ope_plus.png" alt="operator" id="img-operator3"></div>
+            <button id="select-operator3">選択</button>
+        </div>
+    </div>
+    <div>
+        <button id="reset">最初から</button>
+        <p>残り <span id="turn">0</span> ターン</p>
+        <p>スコア: <span id="score">0</span> <span id="added-score"></span></p>
+        <p>30ターン以内に2015を作れ</p>
+        <p>0~2025: スコア+{数値}点</p>
+        <p>2025: スコア+10000点</p>
+        <p>2025~4050: スコア+(4050-{数値})点</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
